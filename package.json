@@ -41,7 +41,7 @@
   "scripts": {
     "build": "cheminfo-build --root IJS",
     "clean-lib": "rimraf lib",
-    "compile": "npm run clean-lib && cross-env NODE_ENV=npm babel src --out-dir lib --ignore \"**/__tests__\" --quiet",
+    "compile": "npm i && npm run clean-lib && cross-env NODE_ENV=npm babel src --out-dir lib --ignore \"**/__tests__\" --quiet",
     "eslint": "eslint src test/common.js test/nodeScripts --cache",
     "eslint-fix": "npm run eslint -- --fix",
     "prepack": "npm run compile",
